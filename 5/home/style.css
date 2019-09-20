@@ -1,0 +1,38 @@
+table {
+	border-collapse: collapse;
+	text-align: center;
+}
+
+td:first-child {
+	border-right: 2px solid black;
+}
+
+td:last-child {
+	border-left: 2px solid black;
+}
+
+tr:first-child {
+	border-bottom: 2px solid black;
+}
+
+tr:last-child {
+	border-top: 2px solid black;
+}
+
+td {
+	height: 35px;
+	width: 35px;
+	padding: 4px 5px;
+}
+
+td.black{
+	background-color: #844e51;
+}
+
+td.white{
+	background-color: #efebe9;
+}
+
+td.black:hover, td.white:hover {
+    background-color: #949494;
+}

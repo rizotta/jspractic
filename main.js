@@ -1,0 +1,1 @@
+myString = "Some string";

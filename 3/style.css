@@ -1,0 +1,47 @@
+body {
+	/*max-width: 1000px ;*/
+}
+
+button {
+	background-color: #3b5bd2;
+	color: white;
+	border: none;
+	padding: 5px 25px;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: #2b4299;
+}
+
+button:active {
+	background-color: #162457;
+}
+
+h3 {
+	margin-left: 10px;
+}
+
+.col-sm-4 {
+	display: inline-block;
+	margin: 10px 10px 20px 10px;
+	border: 1px solid #bfbebe;
+}
+
+.caption h4 {
+	display: inline-block;
+	margin: 5px 10px;
+}
+
+.pull-right {
+	float: right;
+}
+
+.caption a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}

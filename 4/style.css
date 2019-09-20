@@ -1,0 +1,81 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 15px 30px 0;
+}
+
+.header {
+	height: 100px;
+	background-color: #666;
+	padding: 0 40px;
+}
+
+.header a {
+	color: white;
+	text-decoration: none;
+}
+
+#shopTotal {
+	display: inline-block;
+	float: right;
+	color: white;
+}
+
+.header h3 {
+	margin: 0;
+	padding-top: 18.7px;
+	color: white;
+}
+
+.header p {
+	float: left;
+}
+
+button {
+	background-color: #3b5bd2;
+	color: white;
+	border: none;
+	padding: 5px 25px;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: #2b4299;
+}
+
+button:active {
+	background-color: #162457;
+}
+
+#shop {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.col-sm-4 {
+	margin-top: 25px;
+	border: 1px solid #bfbebe;
+}
+
+.caption h4 {
+	display: inline-block;
+	margin: 5px 10px;
+}
+
+.pull-right {
+	float: right;
+}
+
+.caption a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
