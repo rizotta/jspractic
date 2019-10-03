@@ -1,0 +1,42 @@
+$widthAll: 1200px
+$sizeSmall: 100px
+$sizeBig: 500px
+$sizeBtn: 50px
+$colorBtn: #949494
+$btnFontSize: 30px
+
+.margin
+  margin: 0 auto
+
+.container
+  max-width: $widthAll
+  @extend .margin
+
+header
+  margin-bottom: 20px
+  a
+    display: block
+    margin-bottom: 20px
+
+#gallery
+  text-align: center
+  img
+    max-width: $sizeSmall
+    max-height: $sizeSmall
+
+.big
+  margin: 20px auto 0
+  max-width: $sizeBig + $sizeBtn * 2
+  max-height: $sizeBig
+  display: flex
+  align-items: center
+  justify-content: center
+
+#big_picture
+  @extend .margin
+  max-width: $sizeBig
+  max-height: $sizeBig
+  text-align: center
+  img
+    max-width: $sizeBig
+    max-height: $sizeBig

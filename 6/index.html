@@ -1,13 +1,32 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<script src="main.js"></script>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h3>Welcome. Lesson 6</h3>
-	<a href="../">Вернуться на главную страницу</a>
-	<p>Пока здесь ничего нет</p>
+<div class="container">
+    <header>
+        <h3>Welcome. Lesson 6</h3>
+        <a href="../">Вернуться на главную страницу</a>
+        <a href="../" id="false-back">Ссылка, для которой отключено стандартное событие</a>
+    </header>
+    <main>
+
+        <div id="gallery">
+			<p>Галерея изображений. Нажмите на миниатюру, чтобы увидеть изображение большого размера.</p>
+            <img id="image_1" src="img/small/1.jpg" alt="image_1">
+            <img id="image_2" src="img/small/2.jpg" alt="image_2">
+            <img id="image_3" src="img/small/3.jpg" alt="image_3">
+            <img id="image_4" src="img/small/4.jpg" alt="image_4">
+            <img id="image_5" src="img/small/5.jpg" alt="image_4">
+            <img id="image_6" src="img/small/6.jpg" alt="image_4">
+        </div>
+        <div id="big_picture"></div>
+    </main>
+
+</div>
+<script src="main.js"></script>
 </body>
 </html>

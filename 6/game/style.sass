@@ -1,0 +1,28 @@
+$widthAll: 1200px
+$sizeCell: 50px
+$widthBorder: 3px
+$sizeGame: $sizeCell * 3 + $widthBorder * 3
+$sizeLetter: 24px
+$paddingCell: ($sizeCell - $sizeLetter - $sizeLetter/5 ) / 2
+
+.margin
+  margin: 0 auto
+
+.container
+  max-width: $widthAll
+  @extend .margin
+
+#game
+  padding: 20px
+  width: $sizeGame
+  height: $sizeGame
+  font-size: $sizeLetter
+  div
+    float: left
+    width: $sizeCell - $paddingCell * 2
+    height: $sizeCell - $paddingCell * 2
+    border: $widthBorder solid #666
+    text-align: center
+    padding: $paddingCell
+    margin-right: -$widthBorder
+    margin-bottom: -$widthBorder
