@@ -1,0 +1,69 @@
+$widthAll: 600px
+$cellSize: 15px
+
+$tableColor: #212121
+$borderTableColor: darken($tableColor, 20)
+$borderCellColor: lighten($tableColor, 30)
+$snakeColor: white
+$foodColor: red
+
+$btnWidth: 100px
+$btnHeight: 50px
+$btnFontSize: 16px
+$btnColor: #546e7a
+$btnFontColor: white
+
+main
+  display: flex
+  justify-content: center
+  align-items: center
+
+#snake
+  &-field
+    display: flex
+    justify-content: center
+    margin: 20px 20px
+
+.game_table
+  border-collapse: collapse
+  background-color: $tableColor
+  border: 1px solid $borderTableColor
+
+  &-cell
+    width: $cellSize
+    height: $cellSize
+    border: 1px solid $borderCellColor
+    border-collapse: collapse
+
+.unit
+  &_snake
+    background-color: $snakeColor
+
+  &_food
+    background-color: $foodColor
+
+.btn
+  width: $btnWidth
+  height: $btnHeight
+  background-color: $btnColor
+  color: $btnFontColor
+  font-size: 16px
+  font-family: sans-serif
+  border-radius: 10px
+  cursor: pointer
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &:hover
+    transform: translate(1px, 1px)
+    background-color: darken($btnColor, 10)
+
+  &:active
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3)
+
+  &-container
+    margin-right: 10%
+
+  &-start
+    margin-bottom: 20%

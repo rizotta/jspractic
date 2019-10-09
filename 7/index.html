@@ -1,13 +1,24 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<script src="main.js"></script>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h3>Welcome. Lesson 7</h3>
-	<a href="../">Вернуться на главную страницу</a>
-	<p>Пока здесь ничего нет</p>
+<div class="container">
+    <header>
+        <h3>Welcome. Lesson 7</h3>
+        <a href="../">Вернуться на главную страницу</a>
+    </header>
+    <main>
+        <div class="btn-container">
+            <div id="snake-start" class="btn btn-start">Start</div>
+            <div id="snake-new" class="btn btn-new">New game</div>
+        </div>
+        <div id="snake-field"></div>
+    </main>
+</div>
+<script src="main.js"></script>
 </body>
 </html>
