@@ -1,5 +1,5 @@
-$widthAll: 600px
 $cellSize: 15px
+$tableSize: 360px
 
 $tableColor: #212121
 $borderTableColor: darken($tableColor, 20)
@@ -10,11 +10,14 @@ $foodColor: red
 $btnWidth: 100px
 $btnHeight: 50px
 $btnFontSize: 16px
-$btnColor: #546e7a
+$btnColorStart: #43A047
+$btnColorPause: #546e7a
+$btnColorContinue: #EF5350
+
 $btnFontColor: white
 
 main
-  display: flex
+  //display: flex
   justify-content: center
   align-items: center
 
@@ -22,12 +25,13 @@ main
   &-field
     display: flex
     justify-content: center
-    margin: 20px 20px
+    margin: 20px 0
 
 .game_table
   border-collapse: collapse
   background-color: $tableColor
   border: 1px solid $borderTableColor
+  min-width: $tableSize
 
   &-cell
     width: $cellSize
@@ -45,7 +49,7 @@ main
 .btn
   width: $btnWidth
   height: $btnHeight
-  background-color: $btnColor
+
   color: $btnFontColor
   font-size: 16px
   font-family: sans-serif
@@ -54,16 +58,23 @@ main
   display: flex
   justify-content: center
   align-items: center
-
+  &-container
+    display: flex
+    justify-content: center
   &:hover
     transform: translate(1px, 1px)
-    background-color: darken($btnColor, 10)
-
   &:active
     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3)
-
-  &-container
-    margin-right: 10%
-
   &-start
-    margin-bottom: 20%
+    margin-right: 20px
+    background-color: $btnColorStart
+    &:hover
+      background-color: darken($btnColorStart, 10)
+  &-pause
+    background-color: $btnColorPause
+    &:hover
+      background-color: darken($btnColorPause, 10)
+  &-continue
+    background-color: $btnColorContinue
+    &:hover
+      background-color: darken($btnColorContinue, 10)
