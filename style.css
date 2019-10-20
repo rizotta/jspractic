@@ -15,3 +15,11 @@ li {
 a:hover {
 	text-decoration: underline;
 }
+
+main {
+	display: flex;
+}
+
+.list {
+	width: 40%;
+}
