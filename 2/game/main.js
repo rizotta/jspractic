@@ -1,16 +1,16 @@
 // 2. Игра "Угадай число"
 
-var number; 		// загаданное число
-var attempts = 0;	// число попыток
-var max = 9999;
-var min = 0;
+let number; 		// загаданное число
+let attempts = 0;	// число попыток
+let max = 9999;
+let min = 0;
 number = Math.round(1000 + Math.random() * (max - min));
 guessNumber();
 
 
 function guessNumber() {
 	attempts++;
-	var result = parseInt(prompt("Введите число от " + min + " до " + max + " ('-1' - закончить игру)", 0));	// 0 - default, если ничего не ввели
+	let result = parseInt(prompt("Введите число от " + min + " до " + max + " ('-1' - закончить игру)", 0));	// 0 - default, если ничего не ввели
 
 	if (result === number) {
 		alert("Вы угадали! Число попыток: " + attempts);

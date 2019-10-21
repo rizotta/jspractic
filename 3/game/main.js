@@ -1,8 +1,8 @@
 // Игра "Быки и коровы"
 
 
-var number; 		// загаданое число
-var attemps = 0;	// число попыток
+let number; 		// загаданое число
+let attemps = 0;	// число попыток
 // var max = 9999;
 // var min = 1000;
 // number = Math.round(1000 + Math.random() * (max - min));
@@ -10,8 +10,8 @@ number = [2, 4, 5, 6];
 guessNumber();
 
 function guessNumber() {
-	var result = parseInt(prompt("Введите четырехзначное число без нулей ('-1' - закончить игру)."));	// 0 - default, если ничего не ввели
-	var gameIsRunning = true;
+	let result = parseInt(prompt("Введите четырехзначное число без нулей ('-1' - закончить игру)."));	// 0 - default, если ничего не ввели
+	let gameIsRunning = true;
 
 	while (gameIsRunning) {
 		if (result === -1) {
@@ -37,11 +37,11 @@ function guessNumber() {
 
 function checkNumber(userResult) {
 	attemps++;
-	var answer = [false, 0, 0];				// выйграл ли, кол-во быков, кол-во коров. 
-	var ranks = ('' + userResult).split('');	// пользоват-ое число в строку + разбиваем строку на символы
+	let answer = [false, 0, 0];				// выйграл ли, кол-во быков, кол-во коров.
+	let ranks = ('' + userResult).split('');	// пользоват-ое число в строку + разбиваем строку на символы
 	// userResult === 1234, ranks ===["1", "2", "3", "4"]
-	for (var i = 0; i < ranks.length; i++) {
-		var num = parseInt(ranks[i]);
+	for (let i = 0; i < ranks.length; i++) {
+		let num = parseInt(ranks[i]);
 
 		if (num === number[i]) {		// если угадал число на правильной позиции
 			answer[1]++;							// увеличиваем быков
@@ -54,5 +54,3 @@ function checkNumber(userResult) {
 	}
 	return answer;
 }
-
-

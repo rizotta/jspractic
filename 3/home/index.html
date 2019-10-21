@@ -6,16 +6,16 @@
 </head>
 
 <body>
-	<h3 style="margin-left: 10px";>Welcome. Lesson 3</h3>
+	<h3 style="margin-left: 10px">Welcome. Lesson 3</h3>
 	<a href="../../">Вернуться на главную страницу</a>
 
 	<p><b>Задание 1.</b> С помощью цикла while вывести все простые числа в промежутке от 0 до 100.</p>
 	<p>Ответ: </p>
 	<script>
-		var num = 2;									// простые числа начинаются с 2
+		let num = 2;									// простые числа начинаются с 2
 		while ( num <= 100) {
-			var count = 0;
-			var max = Math.sqrt(num);
+			let count = 0;
+			let max = Math.sqrt(num);
 				for (let i = 2; i < max; i++) {			// предел для поиска делителей равен корню из числа
 					if (num % i) {						// если есть остаток, то  идём дальше	
 		  				continue;
@@ -24,7 +24,7 @@
 				}	
 			if (!count) document.write(num + " ");			// делителей нет - значит простое
 			num++;
-	};
+	}
 	</script>
 	<hr>
 
@@ -52,7 +52,7 @@
 	<p><b>Задание 3.*</b> Вывести с помощью цикла for числа от 0 до 9, НЕ используя тело цикла. То есть выглядеть должно вот так: for(…){// здесь пусто}</p>
 	<p>Ответ: </p>
 	<script>
-		for (let i = 0; i <=9; document.write(i++ + " ")) {};
+		for (let i = 0; i <=9; document.write(i++ + " ")) {}
 	</script>
 	<hr>
 

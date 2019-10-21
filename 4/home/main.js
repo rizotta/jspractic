@@ -3,8 +3,8 @@
 // Выше 999 = вывести сообщение с помощью console.log и вернуть пустой объект.
 
 function getNumericalDigits(num) {
-	var myObject = {};
-	var num = prompt('Введите число от 0 до 999');
+	let myObject = {};
+	num = prompt('Введите число от 0 до 999');
 	num = parseInt(num, 10);
 
 	if (isNaN(num)) {
@@ -20,6 +20,6 @@ function getNumericalDigits(num) {
 	}
 
 	console.log(myObject);
-};
+}
 
 getNumericalDigits();
